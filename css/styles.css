@@ -304,7 +304,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 center;
-    padding-bottom: 140px;
+    padding-bottom: 178px;
     position: relative;
 }
 header .mob_menu_btn {
@@ -323,10 +323,10 @@ header .mob_menu_btn {
 .header_top {
     position: fixed;
     z-index: 1000;
-    padding: 27px 0;
+    padding: 37px 0;
     top: 0;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1380px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -352,7 +352,7 @@ header .mob_menu_btn {
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.5);
 }
 header .menu .item {
-    margin-left: 30px;
+    margin-left: 41px;
 }
 header .menu .item:first-child {
     margin-left: 0;
@@ -374,6 +374,7 @@ header .close_btn {
 }
 header .menu {
     display: flex;
+    justify-content: end;
 }
 header .menu .item {
     position: relative;
@@ -413,17 +414,18 @@ header .menu .item > a {
     text-decoration: none;
 }
 .header_contacts {
-    margin-bottom: 23px;
+    margin-bottom: 18px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
     gap: 20px;
+    margin-top: 5px;
 }
 .header_contacts-email {
     color: rgb(255, 255, 255);
-    font-size: 16px;
+    font-size: 20px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     text-decoration: none;
     position: relative;
 }
@@ -444,9 +446,9 @@ header .menu .item > a {
 }
 .header_contacts-phone {
     color: rgb(255, 255, 255);
-    font-size: 29px;
+    font-size: 36px;
     font-weight: 700;
-    line-height: 1.2;
+    line-height: 1.1;
     text-decoration: none;
     position: relative;
 }
@@ -474,7 +476,7 @@ header .menu .item > a {
     font-weight: 900;
     line-height: 0.932;
     letter-spacing: -3px; 
-    padding-top: 304px;  
+    padding-top: 352px;  
     text-align: center;
 }
 .header_calc {
@@ -487,7 +489,7 @@ header .menu .item > a {
 .header_calc b {
     color: rgb(255, 255, 255);
     font-size: 32px;
-    font-weight: 700;
+    font-weight: 900;
     line-height: 1.218; 
     max-width: 655px;
     display: block;
@@ -671,14 +673,15 @@ header .menu .item > a {
     margin-bottom: 32px;
 }
 .banner_text {
+    font-family: "Golos Text";
     color: rgb(255, 255, 255);
     font-size: 36px;
     font-weight: 400;
-    line-height: 36px;
-    margin-bottom: 48px;
+    line-height: 1;
+    margin-bottom: 34px;
 }
-.banner_text p {
-    margin-bottom: 32px;
+.banner_text p + p {
+    margin-top: 35px;
 }
 .banner_btn {
     display: block;
@@ -870,7 +873,7 @@ header .menu .item > a {
 .work .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .work .swiper-pagination-custom, 
 .work .swiper-pagination-fraction {
-    bottom: -35px;
+    bottom: -12px;
     right: 0px;
     justify-content: center;
 }
@@ -926,6 +929,7 @@ header .menu .item > a {
     background: #fff;
 }
 .accordion_item .head .accordion_title {
+    font-family: "Inter";
     color: rgb(32, 32, 32);
     font-size: 24px;
     font-weight: 500;
@@ -971,6 +975,7 @@ header .menu .item > a {
 }
 .accordion_item.active .head .accordion_title {
     color: #fff;
+    font-family: var(--font_family);
 }
 
 
@@ -1264,6 +1269,7 @@ footer:before {
 
 
 
+/* callback */
 
 .callback_wrap {
     display: flex;
@@ -1274,11 +1280,8 @@ footer:before {
     width: calc(100% - 800px);
 }
 .callback_title {
-    font-weight: 800;
-    font-size: 40px;
-    line-height: 120%;
-    color:  var(--bg2);
-    margin-bottom: 8px;
+    color: #1591D8;
+    margin-bottom: 12px;
 }
 .callback_text {
     margin-bottom: 10px;
