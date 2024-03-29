@@ -562,6 +562,8 @@ header .menu .item > a {
 }
 
 
+/* about */
+
 .about_wrap {
     display: flex;
     flex-wrap: wrap;
@@ -616,41 +618,79 @@ header .menu .item > a {
 
 
 
+/* direction */
+
+.direction_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.direction_items > * {
+    width: calc(100%/3 - 20px);
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
+    background: rgb(255, 255, 255);   
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.direction_item-title {
+    color: rgb(0, 0, 0);
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 1.2;
+    margin-bottom: 24px;
+}
+.direction_item-text {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+
+
+
 
 /* banner */
 
 .banner_wrap {
-    padding: 326px 70px 70px;
-    background: linear-gradient(73.11deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.182) 44.21%, rgba(255, 255, 255, 0) 100%), url(../images/banner.png);
+    padding: 60px;
+    background: linear-gradient(240.99deg, rgba(255, 255, 255, 0) 6.056%,rgba(0, 2, 5, 0.65) 100%), url(../images/banner.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 center;
     position: relative;
     border-radius: 12px;
+    box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
 }
 .banner_title {
     color: rgb(255, 255, 255);
     font-size: 96px;
     font-weight: 900;
-    line-height: 1; 
-    margin-bottom: 10px;
+    line-height: 98px;
+    margin-bottom: 32px;
 }
 .banner_text {
     color: rgb(255, 255, 255);
-    font-size: var(--font_size_title);
-    font-weight: 600;
-    line-height: 1.042;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 36px;
     margin-bottom: 48px;
+}
+.banner_text p {
+    margin-bottom: 32px;
 }
 .banner_btn {
     display: block;
     width: 283px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid rgb(11, 154, 11);
+    border: 1px solid rgb(21, 145, 216);
     border-radius: 8px;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    background: rgb(11, 154, 11);
+    background: rgb(21, 145, 216);
     padding: 19px 15px;
     color: rgb(255, 255, 255);
     font-size: 24px;
@@ -660,7 +700,7 @@ header .menu .item > a {
 }
 .banner_btn:hover {
     background: #fff;
-    color: rgb(11, 154, 11);
+    color: rgb(21, 145, 216);
 }
 
 
