@@ -11,44 +11,32 @@
     }
     .header_title {
         font-size: 34px;
-        padding-top: 120px;
-        text-align: center;
+        padding-top: 160px;
+        text-align: start;
     }
     .header_text {
         font-size: 20px;
-        text-align: center;
+        text-align: start;
     }
     .header_calc {
         margin-top: 20px;
+        flex-direction: column-reverse;
+        align-items: flex-start;
     }
     .header_calc b {
         font-size: 20px;
-        text-align: center;        
+        text-align: start;        
     }
     .header_btn {
         width: 100%;
-        height: 44px;
-        font-size: 14px;
-        line-height: 44px;
         margin: 0 auto;
-        outline: 2px dashed rgb(255, 255, 255);
-        outline-offset: 4px;
     }
     header {
         padding-bottom: 44px;
     }
-     .banner_title {
-        font-size: 34px;
-    }
-    .banner_text {
-        font-size: 20px;
-        margin-bottom: 10px;
-    }
     .banner_btn {
         width: 100%;
-        font-size: 18px;
     }
-
     .stage_items {
         gap: 12px;
     }
@@ -66,6 +54,21 @@
         font-size: 20px;
     }
     .callback_text {
+        font-size: 16px;
+    }
+    .about_item ul li {
+        font-size: 16px;
+    }
+    .banner_text {
+        font-size: 18px;
+    }
+    .banner_title {
+        font-size: 32px;
+    }
+    .banner_text p + p {
+        margin-top: 20px;
+    }
+    .partners_text {
         font-size: 16px;
     }
 

@@ -17,11 +17,17 @@
     .header_calc b {
         font-size: 26px;
     }
-    .banner_wrap {
-        padding: 170px 40px 40px;
-    }
     .header_btn {
         width: 420px;
+    }
+    .direction_items > * {
+        justify-content: flex-start;
+    }
+    .banner_text {
+        font-size: 30px;
+    }
+    .partners_items {
+        width: calc(100% - 365px);
     }
 
 

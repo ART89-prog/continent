@@ -108,6 +108,32 @@
         gap: 20px;
     }
 
+    .about_img {
+        width: 475px;
+        height: 505px;
+    }
+    .about_info {
+        width: calc(100% - 505px);
+    }
+    .partners_wrap {
+        flex-direction: column;
+    }
+    .partners_items {
+        width: 100%;
+        gap: 20px;
+    }
+    .partners_items-bottom {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .partners_items-top {
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+    .partners_items-top .partners_item {
+        width: calc(100% / 3 - 13px);
+    }
+
    
 
 
