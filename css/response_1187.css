@@ -94,36 +94,8 @@
         top: 40px;
         right: 40px;
     }
-    .service_title {
-        margin-bottom: 24px;
-    }
-    .service_text {
-        margin-bottom: 20px;
-    }
-    .service_description {
-        margin-bottom: 15px;
-    }
-    .step_items {
-        flex-wrap: wrap;
-    }
-    .step_items > * {
-        width: calc(100% / 2 - 10px);
-    }
-    .quote {
-        padding: 33px 31px 28px 157px;
-    }
-    .quote_btn {
-        right: 31px;
-    }
     .page header .item a img {
         display: none;
-    }
-    .text-block {
-        margin-top: 50px;
-    }
-    .text-block img {
-        width: 50%;
-        height: auto;
     }
     .callback_img {
         width: 530px;
