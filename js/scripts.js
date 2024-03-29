@@ -86,17 +86,37 @@ $(() => {
 
 
 
-  	// Phone input mask
-	const phoneInputs = document.querySelectorAll('input[type=tel]')
+  // Phone input mask
+  const phoneInputs = document.querySelectorAll('input[type=tel]')
 
-	if (phoneInputs) {
-		phoneInputs.forEach(el => {
-			IMask(el, {
-				mask: '+{7} (000) 000-00-00',
-				lazy: true
-			})
-		})
-	}
+  if (phoneInputs) {
+    phoneInputs.forEach(el => {
+      IMask(el, {
+        mask: '+{7} (000) 000-00-00',
+        lazy: true
+      })
+    })
+  }
+
+
+
+  // Аккордион
+  $('body').on('click', '.accordion .accordion_item .head', function (e) {
+    e.preventDefault()
+
+    const $item = $(this).closest('.accordion_item'),
+      $accordion = $(this).closest('.accordion')
+
+    if ($item.hasClass('active')) {
+      $item.removeClass('active').find('.data').slideUp(200)
+    } else {
+      $accordion.find('.accordion_item').removeClass('active')
+      $accordion.find('.data').slideUp(200)
+
+      $item.addClass('active').find('.data').slideDown(200)
+    }
+  })
+
 
 
 
@@ -105,7 +125,7 @@ $(() => {
     slidesPerView: 3,
     spaceBetween: 30,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.work .swiper-pagination',
       type: 'bullets',
       clickable: true,
     },
@@ -130,11 +150,12 @@ $(() => {
   })
 
 
-  const swiper2 = new Swiper('.text-block .swiper', {
-    slidesPerView: 1,
-    spaceBetween: 0,
+  const swiper2 = new Swiper('.reviews .swiper', {
+    slidesPerView: 2,
+    spaceBetween: 30,
+    autoHeight: true,
     pagination: {
-      el: '.swiper-pagination',
+      el: '.reviews .swiper-pagination',
       type: 'bullets',
       clickable: true,
     },
@@ -150,6 +171,11 @@ $(() => {
       640: {
         slidesPerView: 1,
         spaceBetween: 0
+      }
+      ,
+      1023: {
+        slidesPerView: 2,
+        spaceBetween: 30
       }
     }
   })

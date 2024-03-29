@@ -825,12 +825,11 @@ header .menu .item > a {
 
 /* work */
 
-.work .swiper-slide img + img {
-    margin-top: 40px;
-}
 .work .swiper-slide img {
     border-radius: 12px;
     width: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
 }
 .work .swiper-horizontal > .swiper-pagination-bullets, 
 .work .swiper-pagination-bullets.swiper-pagination-horizontal, 
@@ -856,6 +855,88 @@ header .menu .item > a {
     background: #1591D8;
 }
 
+
+
+/* faq */
+
+.faq_title {
+    margin-bottom: 0;
+}
+.faq_text {
+    margin-bottom: 32px;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.accordion_item {
+    border-radius: 12px;
+    box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
+    background: rgb(255, 255, 255);
+    margin-bottom: 24px;
+}
+.accordion_item:last-child {
+    margin-bottom: 0;
+}
+.accordion_item .head {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 24px;
+    transition: all .2s; 
+    position: relative;
+    z-index: 2;
+    border-radius: 12px;
+    background: #fff;
+}
+.accordion_item .head .accordion_title {
+    color: rgb(32, 32, 32);
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 26px;
+    margin-right: 20px;
+}
+.accordion_item .data {
+    border-top: 1px solid rgba(255, 255, 255, 0.15);
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.2;
+    padding: 20px 24px 24px;
+    border-bottom-right-radius: 12px;
+    border-bottom-left-radius: 12px;
+    background: #1591D8;
+}
+.accordion .accordion_item .data {
+    display: none;
+}
+.accordion .accordion_item .data p+p {
+    margin-top: 20px;
+}
+.faq_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;  
+}
+.accordion_item .faq_btn img:last-child {
+    display: none;
+}
+.accordion_item.active .faq_btn img:last-child {
+    display: block;
+}
+.accordion_item.active .faq_btn img:first-child {
+    display: none;
+}
+.accordion_item.active .head {
+    background: #1591D8;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+.accordion_item.active .head .accordion_title {
+    color: #fff;
+}
 
 
 
@@ -902,6 +983,92 @@ header .menu .item > a {
     font-size: 18px;
     font-weight: 400;
     line-height: 1.11;
+}
+
+
+
+/* reviews */
+
+.reviews .swiper-horizontal > .swiper-pagination-bullets, 
+.reviews .swiper-pagination-bullets.swiper-pagination-horizontal, 
+.reviews .swiper-pagination-custom, 
+.reviews .swiper-pagination-fraction {
+    bottom: -35px;
+    right: 0px;
+    justify-content: center;
+}
+.reviews .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+    background: #CEEDFA;
+    border: none;
+}
+.reviews .swiper-pagination-bullet + .swiper-pagination-bullet {
+    margin-left: 10px !important;
+}
+.reviews .swiper-pagination-bullet-active {
+    width: 32px;
+    height: 12px;
+    border-radius: 500px;
+    background: #1591D8;
+}
+.swiper {
+    padding-bottom: 30px;
+}
+.reviews_item {
+    padding: 24px;
+    border-radius: 12px;
+    box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
+    background: rgb(255, 255, 255);
+}
+.reviews_item-rating {
+    display: flex;
+    align-items: center;
+}
+.reviews_item-rating img + img {
+    margin-left: 8px;
+}
+.reviews_item-text {
+    color: rgb(32, 32, 32);
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 28px; 
+    margin-top: 30px;
+}
+.reviews_item-bottom {
+    margin-top: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.reviews_item-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.reviews_item-avatar {
+    width: 48px;
+    height: 48px;
+    flex-shrink: 0;
+}
+.reviews_item-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.reviews_item-name {
+    color: rgb(32, 32, 32);
+    margin-bottom: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.reviews_item-desc {
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
 }
 
 
