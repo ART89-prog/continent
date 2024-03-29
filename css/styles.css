@@ -123,7 +123,7 @@ input[type=number]
 -------------------*/
 :root {
     --bg: #fff;
-    --bg2: #0B9A0B;
+    --bg2: #1591D8;
     --scroll_width: 17px;
     --text_color: #202020;
     --font_size: 20px;
@@ -296,13 +296,11 @@ img {
 
 
 
-
-
 /*------------
     Header
 ------------*/
 header {
-    background: linear-gradient(73.11deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.182) 44.21%, rgba(255, 255, 255, 0) 100%), url(../images/header_bg.jpg);
+    background: linear-gradient(109.12deg, rgba(0, 0, 0, 0) 4.45%, rgba(0, 0, 0, 0.2) 100%), linear-gradient(73.11deg, rgba(0, 0, 0, 0.7) 0%, rgba(0, 0, 0, 0.182) 44.21%, rgba(255, 255, 255, 0) 100%), url(../images/header_bg.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 0 center;
@@ -341,20 +339,17 @@ header .mob_menu_btn {
     left: 50%;
     transform: translateX(-50%);
     top: 0;
-    background: rgba(0, 133, 0, 0.62);
+    background: rgba(0, 85, 133, 0.7);
+    backdrop-filter: blur(6px);
     z-index: -1;
 }
 .header_fixed .header_top {
-    background: #008500;
+    background: #1591D8;
 }
 .header_fixed .header_top:before {
-    background: #008500;
+    background: #1591D8;
     backdrop-filter: blur(6px);
     box-shadow: 0px 4px 18px 0px rgba(0, 0, 0, 0.5);
-}
-.page .header_top,
-.page .header_top:before {
-    background: var(--bg2);
 }
 header .menu .item {
     margin-left: 30px;
@@ -1194,18 +1189,6 @@ footer:before {
     color: var(--fancybox-color, #92b0ab);
 }
 
-.page header {
-    background: none;
-}
-.page header .item a img {
-    margin-top: 3px;
-    margin-left: 4px;
-}
-.page .header_top-wrap {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-end;
-}
 .checkbox label {
     display: inline-block;
     font-family: inherit;
