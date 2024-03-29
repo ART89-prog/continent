@@ -539,26 +539,24 @@ header .menu .item > a {
     letter-spacing: 0px;
 }
 .btn {
-    margin-top: 10px;
-    margin-left: auto;
     display: block;
-    width: 142px;
+    width: 203px;
     text-align: center;
     text-decoration: none;
-    border: 1px solid rgb(11, 154, 11);
+    border: 1px solid rgb(21, 145, 216);
     border-radius: 8px;
     box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
-    background: rgb(11, 154, 11);
-    padding: 9px 15px;
+    background: rgb(21, 145, 216);
+    height: 60px;
     color: rgb(255, 255, 255);
     font-size: 18px;
     font-weight: 600;
-    line-height: 20px;
+    line-height: 60px;
     transition: all .4s;
 }
 .btn:hover {
     background: #fff;
-    color: rgb(11, 154, 11);
+    color: rgb(21, 145, 216);
 }
 
 
@@ -795,31 +793,68 @@ header .menu .item > a {
 
 /* advantages */
 
-.advantages {
-}
-.cont {
-}
 .advantages_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
 }
 .advantages_info {
-}
-.advantages_title {
-}
-.title {
+    width: calc(50% - 15px);
 }
 .advantages_text {
-}
-.btn {
+    margin-bottom: 30px;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 26px;  
 }
 .advantages_items {
+    width: calc(50% - 15px);
+    column-gap: 36px;
+    row-gap: 0;
+    display: flex;
+    flex-wrap: wrap;
 }
-.advantages_item {
+.advantages_items > * {
+    width: calc(100%/2 - 18px);
+    border-radius: 16px;
+    box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
+    background: rgb(255, 255, 255);
+    padding: 24px;
 }
 .advantages_item-icon {
+    border-radius: 8px;
+    background: rgb(21, 145, 216);
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .advantages_item-title {
+    margin-top: 34px;
+    color: rgb(32, 32, 32);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.444;
 }
 .advantages_item-text {
+    margin-top: 12px;
+    color: rgb(32, 32, 32);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.429;
+}
+.advantages_item:nth-child(2n+1) {
+    margin-bottom: 24px;
+}
+.advantages_item:nth-child(2n) {
+    margin-top: 24px;
+    margin-bottom: 0;
+}
+.advantages_item:nth-child(2) {
+    margin-top: 48px;
 }
 
 
@@ -1263,7 +1298,7 @@ footer:before {
     padding: 20px;
     width: 100%;
     height: 59px;
-    background: #F2FAF2;
+    background: #F2F9FA;
     border-radius: 6px;
     border: none;
     font-family: var(--font_family);
