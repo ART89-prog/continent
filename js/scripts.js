@@ -54,17 +54,6 @@ $(() => {
 
 
 
-  // Ленивая загрузка
-  setTimeout(() => {
-    observer = lozad('.lozad', {
-      rootMargin: '200px 0px',
-      threshold: 0,
-      loaded: (el) => el.classList.add('loaded')
-    })
-
-    observer.observe()
-  }, 200)
-
 
   $('body').on('click', '.modal_link', function (e) {
     e.preventDefault()
@@ -113,8 +102,8 @@ $(() => {
 
 
   const swiper = new Swiper('.work .swiper', {
-    slidesPerView: 2,
-    spaceBetween: 40,
+    slidesPerView: 3,
+    spaceBetween: 30,
     pagination: {
       el: '.swiper-pagination',
       type: 'bullets',
@@ -134,8 +123,8 @@ $(() => {
         spaceBetween: 20
       },
       1023: {
-        slidesPerView: 2,
-        spaceBetween: 40
+        slidesPerView: 3,
+        spaceBetween: 30
       }
     }
   })
