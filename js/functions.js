@@ -3,14 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
 	if (!is_touch_device() || !/(Mac|iPhone|iPod|MacIntel|iPad)/i.test(navigator.platform)) document.documentElement.classList.add('custom_scroll')
 
 
-
-	const observer = new IntersectionObserver(scrollTracking, {
-		threshold: [0, 0.1, 0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1.0]
-	})
-
-	boxes.forEach(element => observer.observe(element))
-
-
 	// Установка ширины стандартного скроллбара
 	document.documentElement.style.setProperty('--scroll_width', widthScroll() + 'px')
 

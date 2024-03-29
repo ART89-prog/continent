@@ -81,6 +81,15 @@
     .system_items {
         gap: 20px;
     }
+    .advantages_wrap {
+        flex-direction: column;
+    }
+    .advantages_info {
+        width: 100%;
+    }
+    .advantages_items {
+        width: 100%;
+    }
 
 
    

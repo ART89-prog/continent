@@ -934,7 +934,7 @@ header .menu .item > a {
     font-size: 24px;
     font-weight: 500;
     line-height: 26px;
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .accordion_item .data {
     border-top: 1px solid rgba(255, 255, 255, 0.15);

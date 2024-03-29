@@ -124,15 +124,14 @@
     }
     .partners_items-bottom {
         gap: 20px;
-        flex-wrap: wrap;
     }
     .partners_items-top {
         gap: 20px;
-        flex-wrap: wrap;
     }
     .partners_items-top .partners_item {
         width: calc(100% / 3 - 13px);
     }
+
 
    
 
