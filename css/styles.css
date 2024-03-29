@@ -1351,7 +1351,7 @@ footer:before {
     font-weight: 400;
     font-size: 14px;
     line-height: 120%;
-    color: rgb(11, 154, 11);  
+    color: #1591D8;  
     text-decoration: none;    
 }
 .callback_img {
@@ -1376,10 +1376,12 @@ footer:before {
     text-align: center;
     color: #FFFFFF;
     margin-top: 26px;
+    border: 1px solid var(--bg2);
     transition: all .4s;
 }
 .callback button:hover {
-    background: #056c05;
+    background: #fff;
+    color: var(--bg2);
 }
 
 
