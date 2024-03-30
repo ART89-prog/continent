@@ -2,7 +2,7 @@
 
     :root {
         --font_size: 18px;
-        --font_size_title: 32px;
+        --font_size_title: 28px;
     }
     .header_logo {
         width: 137px;
@@ -83,7 +83,7 @@
     }
     .header_calc {
         margin-top: 20px;
-        align-items: flex-start;
+        align-items: center;
     }
     .header_calc b {
         font-size: 24px;
@@ -180,7 +180,12 @@
     .faq_text {
         font-size: 16px;
     }
-
+    .callback_text br {
+        display: none;
+    }
+    .direction_item-title {
+        font-size: 22px;
+    }
 
 
 

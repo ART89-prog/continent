@@ -128,6 +128,7 @@ $(() => {
     let options = {
       loop: true,
       speed: 500,
+      watchSlidesProgress: true,
       slideActiveClass: 'active',
       slideVisibleClass: 'visible',
       preloadImages: false,
@@ -170,6 +171,7 @@ $(() => {
     let options = {
       loop: true,
       speed: 500,
+      watchSlidesProgress: true,
       slideActiveClass: 'active',
       slideVisibleClass: 'visible',
       preloadImages: false,

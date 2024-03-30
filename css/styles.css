@@ -475,9 +475,10 @@ header .menu .item > a {
     font-size: 148px;
     font-weight: 900;
     line-height: 0.932;
-    letter-spacing: -3px; 
+    letter-spacing: -0.02em;
     padding-top: 352px;  
     text-align: center;
+    text-shadow: 0px 0px 40px rgba(0, 0, 0, 0.5);
 }
 .header_calc {
     margin-top: 100px;
@@ -578,7 +579,7 @@ header .menu .item > a {
     gap: 32px;
 }
 .about_item {
-    padding: 24px;
+    padding: 27px 24px;
     border-radius: 12px;
     box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
     background: rgb(255, 255, 255);
@@ -863,6 +864,9 @@ header .menu .item > a {
 
 /* work */
 
+.swiper-wrapper {
+    align-items: flex-start;
+}
 .work .swiper-slide img {
     border-radius: 12px;
     width: 100%;
@@ -929,7 +933,6 @@ header .menu .item > a {
     background: #fff;
 }
 .accordion_item .head .accordion_title {
-    font-family: "Inter";
     color: rgb(32, 32, 32);
     font-size: 24px;
     font-weight: 500;
@@ -1309,7 +1312,7 @@ footer:before {
     gap: 50px;
 }
 .callback_form {
-    width: calc(100% - 800px);
+    width: calc(100% - 738px);
 }
 .callback_title {
     color: #1591D8;
@@ -1390,8 +1393,8 @@ footer:before {
     text-decoration: none;    
 }
 .callback_img {
-    width: 788px;
-    height: 564px;
+    width: 708px;
+    height: 515px;
 }
 .callback_img img {
     width: 100%;
