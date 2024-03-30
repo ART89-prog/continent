@@ -1029,6 +1029,38 @@ header .menu .item > a {
 
 /* reviews */
 
+.swiper {
+    overflow: visible !important;
+}
+.swiper-slide {
+    position: relative;
+    display: flex;
+    visibility: hidden;
+    width: auto;
+    transition: opacity .2s linear, visibility .2s linear;
+    pointer-events: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide.active {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
+.swiper-slide.visible {
+    display: flex;
+    visibility: visible;
+    height: auto;
+    pointer-events: auto;
+    opacity: 1;
+    align-items: center;
+    justify-content: center;
+}
 .reviews .swiper-horizontal > .swiper-pagination-bullets, 
 .reviews .swiper-pagination-bullets.swiper-pagination-horizontal, 
 .reviews .swiper-pagination-custom, 

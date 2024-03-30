@@ -119,69 +119,89 @@ $(() => {
 
 
 
+  const workSliders = [],
+    work = document.querySelectorAll('.work .swiper')
 
+  work.forEach(function (el, i) {
+    el.classList.add('work_s' + i)
 
-  const swiper = new Swiper('.work .swiper', {
-    slidesPerView: 3,
-    spaceBetween: 30,
-    pagination: {
-      el: '.work .swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 20
+    let options = {
+      loop: true,
+      speed: 500,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      preloadImages: false,
+      lazy: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 20
+        },
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1023: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        }
       },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 20
-      },
-      640: {
-        slidesPerView: 2,
-        spaceBetween: 20
-      },
-      1023: {
-        slidesPerView: 3,
-        spaceBetween: 30
+      pagination: {
+        el: '.work .swiper-pagination',
+        type: 'bullets',
+        clickable: true,
       }
     }
+
+    workSliders.push(new Swiper('.work_s' + i, options))
   })
 
 
-  const swiper2 = new Swiper('.reviews .swiper', {
-    slidesPerView: 2,
-    spaceBetween: 30,
-    autoHeight: true,
-    pagination: {
-      el: '.reviews .swiper-pagination',
-      type: 'bullets',
-      clickable: true,
-    },
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 0
+  const reviewsSliders = [],
+    reviews = document.querySelectorAll('.reviews .swiper')
+
+  reviews.forEach(function (el, i) {
+    el.classList.add('reviews_s' + i)
+
+    let options = {
+      loop: true,
+      speed: 500,
+      slideActiveClass: 'active',
+      slideVisibleClass: 'visible',
+      preloadImages: false,
+      lazy: true,
+      breakpoints: {
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        480: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        },
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 0
+        }
+        ,
+        823: {
+          slidesPerView: 2,
+          spaceBetween: 30
+        }
       },
-      480: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      },
-      640: {
-        slidesPerView: 1,
-        spaceBetween: 0
-      }
-      ,
-      823: {
-        slidesPerView: 2,
-        spaceBetween: 30
+      pagination: {
+        el: '.reviews .swiper-pagination',
+        type: 'bullets',
+        clickable: true,
       }
     }
+
+    reviewsSliders.push(new Swiper('.reviews_s' + i, options))
   })
-
-
-
 
 
 
