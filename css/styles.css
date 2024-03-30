@@ -579,7 +579,7 @@ header .menu .item > a {
     gap: 32px;
 }
 .about_item {
-    padding: 27px 24px;
+    padding: 24px;
     border-radius: 12px;
     box-shadow: 0px 12px 56px 0px rgba(0, 0, 0, 0.12);
     background: rgb(255, 255, 255);
@@ -607,7 +607,7 @@ header .menu .item > a {
 }
 .about_img {
     width: 675px;
-    height: 718px;
+    height: auto;
 }
 .about_img img {
     width: 100%;
