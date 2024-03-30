@@ -1150,7 +1150,7 @@ header .menu .item > a {
 
 footer {
     position: relative;
-    margin-top: 351px;
+    margin-top: 348px;
     background: #242925;
     color: #fff;
 }
@@ -1167,6 +1167,9 @@ footer:before {
 .footer_wrap {
     display: flex;
     justify-content: space-between;
+}
+.footer_info {
+    max-width: 420px;
 }
 .footer_title {
     font-size: 36px;
